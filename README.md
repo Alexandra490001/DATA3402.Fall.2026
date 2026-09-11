@@ -10,10 +10,33 @@ and labs are pushed as the semester progresses.
 | Path | What's there |
 |------|--------------|
 | `syllabus.pdf` | Course syllabus, grading breakdown, policies |
+| `Chapters/` | The course text, one PDF per chapter, with a review question set |
 | `Lectures/` | One folder per lecture: notebooks and/or slide PDFs |
 | `Labs/` | One folder per lab assignment, plus the GitHub setup guide |
 | `sample.ipynb` | Minimal notebook to check your environment works |
 | `requirements.txt` | Python packages used in the course |
+
+## The course text
+
+`Chapters/` holds the written version of the material — the same ground the lectures cover, but
+in prose you can read at your own pace and go back to. Start with the chapter, use the lecture
+slides as the map, and use the review questions to find out what didn't stick.
+
+| File | Covers |
+|---|---|
+| `Chapter.01.Computers.pdf` | How computers work, from a transistor to an iPhone. Lecture 2 + Lab 1. |
+| `Chapter.01.Review.Questions.pdf` | 100 multiple-choice questions on Chapter 1, tagged easy / medium / hard. |
+| `Chapter.03.Probability.and.Statistics.pdf` | Probability, Bayes, distributions, and generating data from them. Lectures 6 and 7. |
+
+The questions are for self-testing and are not graded. In most of them at least one wrong option
+is what you would believe if you *almost* understood the idea, so read them carefully.
+
+Chapter 3 pairs with a notebook: read the chapter for the reasoning, then work through
+`Lectures/Lecture.7/Lecture.7.ipynb`, which turns it into code — a random number generator built
+from scratch, a histogram function written by hand, accept/reject sampling and Monte Carlo
+integration. Lab 3 draws directly on it.
+
+More chapters land as the semester goes on.
 
 ## Getting started
 
@@ -105,12 +128,13 @@ Lab work is submitted through your own **fork** of this repository:
 **Don't fork yet.** The clone from *Getting started* is all you need to follow along, and
 it is deliberately read-only — you can pull, but you can't push to it. We set up forks
 together, step by step, in the lab session that covers git and GitHub, and that session
-reuses the directory you already have: the existing remote is renamed to `upstream` and
-your fork becomes `origin`. Nothing you do today has to be undone.
+reuses the directory you already have: it keeps the one remote you already have, called
+`origin`, and repoints only its *push* address at your fork. From then on `git pull` brings
+class material and `git push` sends your work to your fork. Nothing you do today has to be
+undone.
 
-`Labs/Git Hub Setup Guide (wsl & Mac Os).pdf` is the written version of that session.
-Read it then, not now — and note that it still shows a previous semester's repository
-name in its example URLs.
+`Labs/GitHub-Setup.pdf` is the written version of that session.
+Read it then, not now.
 
 ## Communication
 
